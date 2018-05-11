@@ -24,6 +24,6 @@ resource "aws_api_gateway_method_response" "DemoPostMethodResponse200" {
   response_models = {
     "application/json" = "Empty"
   }
-  response_parameters = { "method.response.header.Access-Control-Allow-Origin" = "*" }
+  response_parameters = { "method.response.header.Access-Control-Allow-Origin" = "true" }
 }
 ```
